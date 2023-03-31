@@ -20,7 +20,7 @@ public class App extends Application {
   public void start(Stage primaryStage) throws IOException {
     System.out.println("check");
     Parent root = FXMLLoader.load(getClass().getResource("views/MainView.fxml"));
-    Scene scene = new Scene(root, 1280, 800);
+    Scene scene = new Scene(root, 500, 400);
 
     primaryStage.setScene(scene);
     primaryStage.setResizable(false);

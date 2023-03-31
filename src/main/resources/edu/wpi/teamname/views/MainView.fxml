@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import io.github.palexdev.materialfx.controls.MFXButton?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -12,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.teamname.Controllers.MainViewController">
+<AnchorPane fx:id="anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.teamname.Controllers.MainViewController">
    <children>
       <ImageView fitHeight="400.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -53,21 +54,31 @@
                         <Font name="Arial" size="19.0" />
                      </font>
                   </Text>
-                  <MFXButton fx:id="InteriorButton" onAction="#interiorButtonClicked" style="-fx-background-color: #FED31F; -fx-border-color: #000000; -fx-border-width: 1.5; -fx-background-radius: 5; -fx-border-radius: 5;" text="Upload" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                  <MFXButton fx:id="InteriorButton" onAction="#interiorButtonClicked" style="-fx-background-color: #FED31F; -fx-border-color: #000000; -fx-border-width: 1.5; -fx-background-radius: 5; -fx-border-radius: 5;" text="Select Data" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </MFXButton>
-                  <MFXButton fx:id="ExteriorButton" onAction="#exteriorButtonClicked" style="-fx-background-color: #FED31F; -fx-border-color: #000000; -fx-border-width: 1.5; -fx-background-radius: 5; -fx-border-radius: 5;" text="Upload" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                  <MFXButton fx:id="ExteriorButton" onAction="#exteriorButtonClicked" style="-fx-background-color: #FED31F; -fx-border-color: #000000; -fx-border-width: 1.5; -fx-background-radius: 5; -fx-border-radius: 5;" text="Select Data" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </MFXButton>
-                  <MFXButton style="-fx-background-color: #FED31F; -fx-border-color: #000000; -fx-border-width: 1.5; -fx-background-radius: 5; -fx-border-radius: 5;" text="Go!" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                  <MFXButton fx:id="graphButton" onAction="#GraphButtonPressed" style="-fx-background-color: #FED31F; -fx-border-color: #000000; -fx-border-width: 1.5; -fx-background-radius: 5; -fx-border-radius: 5;" text="Go!" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                      <font>
                         <Font size="15.0" />
                      </font>
                   </MFXButton>
+                  <Text fx:id="interiorSelected" fill="#0cb50f" strokeType="OUTSIDE" strokeWidth="0.0" text="File Selected!" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+                     <GridPane.margin>
+                        <Insets bottom="15.0" />
+                     </GridPane.margin>
+                  </Text>
+                  <Text fx:id="exteriorSelected" fill="#0cb50f" strokeType="OUTSIDE" strokeWidth="0.0" text="File Selected!" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                     <GridPane.margin>
+                        <Insets bottom="15.0" />
+                     </GridPane.margin>
+                  </Text>
                </children>
             </GridPane>
          </center>
