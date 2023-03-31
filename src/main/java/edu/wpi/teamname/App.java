@@ -1,4 +1,4 @@
-package WocFridgeCode;
+package edu.wpi.teamname;
 
 import java.io.IOException;
 import javafx.application.Application;

@@ -33,17 +33,14 @@
 -->
 
 <?import io.github.palexdev.materialfx.controls.MFXButton?>
-<?import io.github.palexdev.materialfx.controls.MFXTextField?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WocFridgeCode.Controllers.ExampleController">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.wpi.teamname.Controllers.ExampleController">
   <children>
     <MenuBar VBox.vgrow="NEVER">
       <menus>
@@ -86,18 +83,7 @@
     </MenuBar>
     <AnchorPane id="clickHereButton" accessibleRole="BUTTON" maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" VBox.vgrow="ALWAYS">
       <children>
-            <MFXButton fx:id="ClickButton" accessibleHelp="Click button to print to terminal" accessibleText="Click Here" layoutX="284.0" layoutY="161.0" onAction="#buttonClicked" text="Click Here" />
-            <Text fx:id="nameDisplay" layoutX="225.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello World">
-               <font>
-                  <Font size="36.0" />
-               </font>
-            </Text>
-            <MFXTextField fx:id="textField" layoutX="208.0" layoutY="103.0" prefHeight="33.0" prefWidth="224.0" />
-            <Text layoutX="241.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="What is your name?">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Text>
+            <MFXButton fx:id="ClickButton" accessibleHelp="Click button to print to terminal" accessibleText="Click Here" layoutX="33.0" layoutY="31.0" onAction="#buttonClicked" text="Click Here" />
       </children>
     </AnchorPane>
   </children>
