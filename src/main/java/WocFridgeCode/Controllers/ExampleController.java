@@ -1,4 +1,4 @@
-package edu.wpi.teamname.Controllers;
+package WocFridgeCode.Controllers;
 
 import io.github.palexdev.materialfx.controls.MFXTextField;
 import java.io.IOException;

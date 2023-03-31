@@ -1,4 +1,4 @@
-package edu.wpi.teamname;
+package WocFridgeCode;
 
 public class Main {
 
