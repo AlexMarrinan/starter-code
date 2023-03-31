@@ -4,8 +4,14 @@ import io.github.palexdev.materialfx.controls.MFXButton;
 import java.io.File;
 import java.io.IOException;
 import java.sql.*;
+
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.chart.LineChart;
+import javafx.scene.chart.NumberAxis;
+import javafx.scene.chart.XYChart;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 import javafx.stage.FileChooser;
@@ -57,7 +63,22 @@ public class MainViewController {
     updateScreen();
   }
 
-  public void GraphButtonPressed(ActionEvent actionEvent) throws IOException {}
+  public void GraphButtonPressed(ActionEvent actionEvent) throws IOException {
+/*
+    ObservableList<XYChart.Series<Number, Number>> series = FXCollections.observableArrayList();
+
+    ObservableList<XYChart.Data<Number, Number>> interiorData = FXCollections.observableArrayList();
+    interiorData.add(new XYChart.Data<Number, Number>(1679284800, 1));
+    interiorData.add(new XYChart.Data<Number, Number>(1679336500, 10));
+
+    series.add(new XYChart.Series<>("Interior", interiorData));
+
+    NumberAxis xAxis = new NumberAxis();
+    NumberAxis yAxis = new NumberAxis();
+    LineChart<Number, Number> lineChart = new LineChart<>(xAxis, yAxis, series);
+
+ */
+  }
 
   private File runFileExplorer(String intExt) {
     // Set up file explorer
